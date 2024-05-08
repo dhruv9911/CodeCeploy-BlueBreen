@@ -5,9 +5,13 @@ URL: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-op
 
 
 #!/bin/bash -xe
+
 yum update -y
+
 yum install httpd -y
+
 echo 'Hello' >> /var/www/html/index.html
+
 systemctl restart httpd
 
 ## Code Deploy Agent Bootstrap Script##
